@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --ink: #14232b;
+    --paper: #eef3f2;
+    --card: #ffffff;
+    --teal: #0f4c5c;
+    --teal-dark: #0a3540;
+    --teal-light: #166377;
+    --sign: #f2b705;
+    --sign-hover: #deb200;
+    --red: #c8372d;
+    --green: #1d7a4e;
+    --line: #c9d6d3;
+    --mute: #51666e;
+    --font-heading: "Bricolage Grotesque", system-ui, sans-serif;
+    --font-body: "Source Sans 3", system-ui, sans-serif;
+    --font-tamil: "Noto Sans Tamil", system-ui, sans-serif;
+  }
+
+  .dark {
+    --ink: #e6efed;
+    --paper: #0d1a1f;
+    --card: #14272e;
+    --teal: #166377;
+    --teal-dark: #0f4c5c;
+    --teal-light: #208099;
+    --line: #27424b;
+    --mute: #9bb2b8;
+  }
+
+  body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+
+  .font-tamil {
+    font-family: var(--font-tamil);
+  }
+}
+
+/* Custom utility classes */
+.plate-header {
+  background-color: var(--sign);
+  color: #14232b;
+  border-bottom: 4px solid #14232b;
+}
+
+.plate-resolved {
+  background-color: #1d7a4e;
+  color: #ffffff;
+  border-bottom: 4px solid #124d31;
+}
+
+.timeline-line {
+  border-left: 3px solid var(--line);
+}
